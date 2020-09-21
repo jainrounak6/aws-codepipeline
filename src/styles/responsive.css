@@ -1,0 +1,27 @@
+/*TEMPLATE*/
+
+/* large mobile */
+@media only screen and (max-width: 575px) {
+}
+
+/* Small layout */
+@media only screen and (max-width: 767px) {
+}
+
+/* Medium layout */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+}
+
+/* Large Layout*/
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+}
+
+/* Laptop devices */
+@media only screen and (max-width: 1599px) and (min-width: 1200px) {
+}
+
+$lg-layout : @media only screen and (max-width: 1199px) and (min-width: 992px);
+$md-layout : @media only screen and (max-width: 991px) and (min-width: 768px);
+$sm-layout : @media only screen and (max-width: 767px);
+$lg-layout : only screen and (max-width: 1199px) and (min-width: 992px);
+$lg-layout : only screen and (max-width: 1199px) and (min-width: 992px);

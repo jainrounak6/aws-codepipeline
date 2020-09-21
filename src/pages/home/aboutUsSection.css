@@ -1,0 +1,109 @@
+#about-us-section .description p{
+    font-weight: 300;
+    color: #717173;
+}
+
+#about-us-section .description h2{
+    margin-bottom: 8px;
+    font-size: 60px;
+}
+
+#about-us-section .description h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 48px;
+    margin-top: -20px;
+}
+
+
+.section-title.h2 {
+    /* font-size: 36px;
+    margin-bottom: 7px; */
+    margin-top: -20px;
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+
+.section-title.h3 {
+    font-size: 36px;
+    line-height: 26px;
+}
+
+.section-title p {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(29, 29, 36, 0.75);
+}
+
+
+.section-title p a{
+    color: rgba(29, 29, 36, 1);
+    font-weight: 500;
+}
+
+.section-title p br{
+    /* display: none;   */
+}
+
+.about-us-list {
+    margin-top: 15px;
+}
+
+.about-us-list h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}    
+.about-us-list p {
+    font-weight: 300;
+    color: rgba(29, 29, 36, 0.75);
+}   
+
+  
+
+
+/* large mobile */
+@media only screen and (max-width: 575px) {
+}
+
+/* Small layout */
+@media only screen and (max-width: 767px) {
+    h2.section-title {
+        font-size: 36px;
+        margin-bottom: 7px;
+    }
+
+    h3.section-title {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .about-us-list h3 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }  
+}
+
+/* Medium layout */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+}
+
+/* Large Layout*/
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    h2.section-title {
+        font-size: 50px;
+    }
+}
+
+/* Laptop devices */
+@media only screen and (max-width: 1599px) and (min-width: 1200px) {
+}
+
+
+
+
+
+

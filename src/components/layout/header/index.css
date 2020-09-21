@@ -1,0 +1,36 @@
+header {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px !important;    
+}
+
+/* large mobile */
+@media only screen and (max-width: 575px) {
+}
+
+/* Small layout */
+@media only screen and (max-width: 767px) {
+    header{
+        padding: 15px !important; 
+    }
+}
+
+/* Medium layout */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    header{
+        padding: 30px !important; 
+    }
+}
+
+/* Large Layout*/
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    header{
+        padding: 30px !important; 
+    }
+}
+
+/* Laptop devices */
+@media only screen and (max-width: 1599px) and (min-width: 1200px) {
+}

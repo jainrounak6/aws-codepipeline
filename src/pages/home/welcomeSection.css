@@ -1,0 +1,102 @@
+#welcome-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url(../../assets/images/bg/bg-image-1.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    /* padding-top: 60px; */
+    min-height: 1080px;
+    width: 100%;
+}
+
+#welcome-section .overlay{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00010c;
+    opacity: .6;
+}
+
+#welcome-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+#welcome-section h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 125px;
+    line-height: 130px;
+    padding-top: 100px;
+}
+
+
+/* large mobile */
+@media only screen and (max-width: 575px) {
+    #welcome-section h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+}
+
+/* Small layout */
+@media only screen and (max-width: 767px) {
+    #welcome-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    #welcome-section h1 {
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 0;
+        padding-top: 70px;
+    }
+    
+}
+
+/* Medium layout */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    #welcome-section {
+        min-height: auto;
+        padding: 80px 0;
+        padding-bottom: 60px;
+    }
+
+    #welcome-section h1 {
+        font-size: 70px;
+        line-height: 82px;
+        margin-bottom: 0;
+        padding-top: 50px;
+    }
+}
+
+/* Large Layout*/
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
+    #welcome-section h1 {
+        font-size: 90px;
+        line-height: 103px;
+    }
+}
+
+/* Laptop devices */
+@media only screen and (max-width: 1599px) and (min-width: 1200px) {
+    #welcome-section {
+        min-height: 900px;
+    }
+
+    #welcome-section h1 {
+        font-size: 100px;
+        line-height: 112px;
+    }
+}
+
