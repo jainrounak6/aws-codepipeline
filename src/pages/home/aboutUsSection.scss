@@ -1,0 +1,43 @@
+$sm-layout : only screen and (max-width: 767px);
+$lg-layout : only screen and (max-width: 1199px) and (min-width: 992px);
+$md-layout : only screen and (max-width: 991px) and (min-width: 768px);
+$laptop-device : only screen and (max-width: 1599px) and (min-width: 1200px);
+
+
+.about-position-top {
+    @media #{$lg-layout} {
+        padding-top: 120px;
+    }
+    @media #{$md-layout} {
+        padding-top: 80px;
+    }
+    @media #{$sm-layout} {
+        padding-top: 60px;
+    }
+    .thumbnail {
+        margin-top: -190px;
+        // @media #{$lg-layout} {
+        //     margin-top: 0;
+        // }
+        // @media #{$laptop-device} {
+        //     margin-top: -89px;
+        // }
+        // @media #{$md-layout} {
+        //     margin-top: 0;
+        // }
+        // @media #{$sm-layout} {
+        //     margin-top: 0;
+        // }
+    }
+}
+
+.about-wrapper {
+    .thumbnail {
+        position: relative;
+        z-index: 2;
+        img{
+            border-radius: 8px;
+           
+        }
+    }
+}

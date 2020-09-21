@@ -1,0 +1,25 @@
+$sm-layout : only screen and (max-width: 767px);
+$lg-layout : only screen and (max-width: 1199px) and (min-width: 992px);
+$md-layout : only screen and (max-width: 991px) and (min-width: 768px);
+
+@for $i from 1 through 40 {
+  .ptb--#{5 * $i} { padding: 5px *$i 0; }
+  .plr--#{5 * $i} { padding: 0 5px *$i; }
+  .pt--#{5 * $i} { padding-top: 5px *$i; }
+  .pb--#{5 * $i} { padding-bottom: 5px *$i; }
+  .pl--#{5 * $i} { padding-left: 5px *$i;}
+  .pr--#{5 * $i} { padding-right: 5px *$i;}
+  .mt--#{5 * $i} {margin-top: 5px *$i !important;}
+  .mb--#{5 * $i} {margin-bottom: 5px *$i;}
+  .mr--#{5 * $i} {margin-right: 5px *$i;}
+  .ml--#{5 * $i} {margin-left: 5px *$i;}
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  @media #{$sm-layout} {
+      font-size: 16px !important;
+      line-height: 28px !important;
+  }
+}

@@ -1,0 +1,31 @@
+stages:
+- build
+- deploy
+build:
+  stage: build
+  image: node:12.16.2
+  before_script:
+    - npm install -g surge
+    
+  script:
+    - npm install ra-data-json-server  
+    - npm install package.json
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - build/
+    name: WebApp
+    expire_in: 1 Week
+  
+  only:     
+    - master
+deploy:
+  stage: deploy
+  image: python:latest 
+  script:
+    - pip install awscli
+    - aws s3 rm s3://devopsarray/ --recursive 
+    - aws s3 cp build/ s3://devopsarray/ --recursive
+    
+  only:
+    - master

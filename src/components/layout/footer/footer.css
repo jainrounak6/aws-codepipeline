@@ -1,0 +1,33 @@
+footer ,footer .row{
+    height: 60vh;
+}
+
+footer .right {
+    background: url(../../../assets/images/bg/bg-image-1.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85%;
+}
+footer .right .overlay{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00010c;
+    opacity: .6;
+}
+
+footer .left {
+    height: 100%;
+    background: #f81f01 !important;
+    background: -webkit-linear-gradient(145deg,#f81f01,#ee076e) !important;
+    background: -webkit-linear-gradient(305deg,#f81f01,#ee076e) !important;
+    background: linear-gradient(145deg,#f81f01,#ee076e) !important;
+}
+
+
+
+
+
