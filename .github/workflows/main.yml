@@ -34,7 +34,7 @@ jobs:
         aws-region: ap-south-1
     - name: Cleaning S3 bucket with the AWS CLI
       run: |
-       aws s3 rm s3://rounak-devops/ --recursive        
+       aws s3 rm s3://bucket-name/ --recursive        
     - name: Copy build to S3 bucket with the AWS CLI
       run: |
-       aws s3 cp build/ s3://rounak-devops/ --recursive 
+       aws s3 cp build/ s3://bucket-name/ --recursive 
